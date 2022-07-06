@@ -1,0 +1,518 @@
+/* Fonts */
+/* Bold */
+@font-face {
+  font-family: 'Break';
+  src: url('fonts/Break\ Bold.woff') format('woff'),
+      url('fonts/Break\ Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Semi Bold */
+@font-face {
+  font-family: 'Break';
+  src: url('fonts/Break\ SemiBold.woff') format('woff'),
+      url('fonts/Break\ SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Break';
+  src: url('fonts/Break\ Regular\ \(1\).woff') format('woff'),
+      url('fonts/Break\ Regular\ \(1\).woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Light */
+@font-face {
+  font-family: 'Break';
+  src: url('fonts/Break\ Light\ \(1\).woff') format('woff'),
+      url('fonts/Break\ Light\ \(1\).woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Extra Light */
+@font-face {
+  font-family: 'Break';
+  src: url('fonts/Break\ ExtraLight.woff') format('woff'),
+      url('fonts/Break\ ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Moon Light */
+@font-face {
+  font-family: 'Moon Light';
+  src: url('fonts/Moon\ Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Navigation and Background Section*/
+*{
+  margin:0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.city-bg {
+  background: url("https://images4.alphacoders.com/935/935182.jpg");
+  background-size: cover;
+  min-height: 90vh;
+  background-position: center;
+  opacity:10;
+  padding-top:100px;
+  }
+
+.nav ul li a{
+  display:block;
+  text-decoration:none!important;
+  color: white;
+  letter-spacing:1px;
+  padding: 30px;
+}
+
+
+.nav ul li a:hover{
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  color:black;
+}
+
+.nav {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+  position:fixed;
+  top:0;
+  display:flex;
+  justify-content:flex-end;
+  font-family:'Moon Light',sans-serif;
+}
+
+.nav ul{
+  text-align:center;
+}
+
+.nav ul li{
+  display:inline-block;
+  list-style:none;
+  font-size:20px;
+}
+
+.Logo{
+  padding-top: 25px;
+  margin-right:15%;
+  letter-spacing:2px;
+  position:sticky;
+  color:white;
+  float:left;
+  font-size:30px;
+  font-family:'Break', sans-serif;
+  font-weight:bold;
+}
+
+span{
+  color:purple;
+}
+
+.name{
+  color:#FFF;
+  text-align: center;
+  font-size: 70px;
+  margin-bottom:10px;
+  font-family: 'Break', sans-serif;
+  font-weight:normal;
+}
+.quote{
+  margin-left:300px;
+  color:#FFF;
+  text-align: center;
+  font-size: 40px;
+  font-weight:100px;
+  width:60%;
+  font-family:'Moon Light', sans-serif;
+
+  
+}
+
+.profile-pic{
+  border-color: #FFF;
+  border-style: solid;
+  width: 25%;
+  border-radius: 50%;
+  display:block;
+  margin:0 auto;
+  
+}
+.banner{
+  background-color: black;
+  font-size:22px;
+  padding: 10px;
+ }
+
+ .icons{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.icons a{
+  text-decoration: none;
+  color:purple;
+}
+
+.menu-background{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.1), indigo
+  ), url("https://wallpaperaccess.com/full/1966837.jpg");
+  height:100vh;
+  background-size:cover;
+  text-align: center;
+}
+
+.menu-navigation{
+  background-position: center;
+  padding:20px;
+  font-size:70px;
+  font-family:'Moon-Light',sans-serif;
+}
+
+
+.menu-navigation ul li a:hover{
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  color:black;
+}
+
+.menu-navigation ul li {
+  list-style:none;
+}
+.menu-navigation ul li a{
+  text-decoration:none!important;
+  color:white;
+}
+
+.home-menu,.about-menu,.portfolio-menu,.resume-menu,.contact-menu{
+  padding: 30px 0;
+}
+/*About Me Section*/
+.about-me{
+  height:100vh;
+  background-color: rgb(125,0,125);
+  background-size: cover;
+  font-family:'Break',sans-serif;
+  font-weight: light;
+}
+
+.header{ 
+  padding:50px 0;
+  font-size: 40px;
+  text-align: center;
+  color:#FFF;
+  position:relative;
+}
+
+.paragraph{
+  color:#FFF;
+  width:30%;
+  height:auto;
+  font-size:18px;
+  text-align:left;
+  margin:1.5%;
+  font-family:'Moon Light',sans-serif;
+}
+
+.container{
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  padding: left 20px;
+}
+
+.side-pic{
+  width:30%;
+  height:auto;
+  left:0;
+  margin:2.5%;
+  border-radius: 5px;
+}
+
+/*Resume Section*/
+.column{
+  top: 757px;
+  right:0;
+  position:absolute;
+  background-color:purple;
+  border-style: solid;
+  border-color:#FFF;
+  font-size:15px;
+  color:#FFF;
+  text-align: center;
+  width:25%;
+  height:100vh;
+}
+
+.skill-info{
+  border-style: solid;
+  border-right:#FFF;
+  border-top:#FFF;
+  border-left:#FFF;
+  background-color:purple;
+  padding:20px;
+  font-size: 25px;
+}
+
+.skill-text{
+  border: solid #FFF;
+  border-right: #FFF;
+  border-top: #FFF;
+  border-left:#FFF;
+  font-size: 15px;
+  font-family:'Moon Light',sans-serif;
+}
+
+.skill-resume{
+  border-style: solid;
+  border-right:#FFF;
+  border-top:#FFF;
+  border-left:#FFF;
+  background-color:purple;
+  padding:20px;
+  font-size: 25px;
+}
+
+.skill-resume a {
+  text-decoration: none;
+  color:white;
+}
+
+.skill-icons{
+padding:10px;
+display:flex;
+justify-content: center;
+}
+
+ul{
+  list-style:none;
+
+}
+
+/*Portfolio Section*/
+.compatible-width{
+  margin:auto;
+  max-width:1300px;
+  padding: 0 80px 
+}
+
+.port-bg .compatible-width{
+  margin:auto 0 auto 40px
+}
+
+.port-bg{
+  display:flex;
+  height:100vh;
+  background-color:#000;
+}
+
+.content{
+  color:#FFF;
+}
+
+.port-bg .content .header-portfolio{
+  font-size: 80px;
+  font-weight: 400;
+}
+.port-bg .content .portfolio-text{
+  font-size: 40px;
+  font-weight: 100;
+  margin-left:-20px;
+  font-family:'Moon Light', sans-serif;
+}
+.port-bg .content .quotes h3{
+  font-size: 35px;
+  font-weight: 250;
+  margin-left:-40px;
+  width:40%;
+  font-family:'Moon Light', sans-serif;
+}
+
+.port-bg .content .author {
+  margin-top:10px;
+  font-size: 35px;
+  margin-left:50px;
+  font-family:'Moon Light', sans-serif;
+}
+
+.header-portfolio{
+  font-family:'Break',sans-serif;
+  font-weight: bold;
+}
+
+/*Project Slider Section*/
+.slide-title{
+  position:absolute;
+  top: 1650px;
+  right:390px;
+  color:#FFF;
+  font-size:50px;
+  font-weight:200px;
+  font-family:'Break',sans-serif;
+  font-weight:bold;
+}
+
+.slider-body{
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  position:absolute;
+  top: 1750px;
+  right:60px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+section .card .img{
+  height: 180px;
+  width:180px;
+  border-radius:50%;
+  padding:3px;
+}
+
+section .card .img img{
+  object-fit: cover;
+  height:100%;
+  width:100%;
+  border-radius: 50%;
+  padding:5px;
+  background:#FFF;
+}
+
+.card{
+  position: relative;
+  background:rgb(35,33,35);
+  border-radius:20px;
+  display:flex;
+  padding:20px;
+  align-items:center;
+  flex-direction:column;
+  width:115%;
+}
+
+.swiper{
+  width:900px;
+}
+
+.project-name{
+  font-family:'Moon Light',sans-serif;
+  font-size:15px;
+}
+
+/*Contact Me Form*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fade-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), #DCD0FF
+  ), url("https://static.vecteezy.com/system/resources/previews/000/580/862/original/vector-abstract-pink-and-purple-geometric-background-with-lighting.jpg");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 1500px;
+  max-width: 600px;
+}
+
+.input-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+input,
+textarea {
+  padding: 10px;
+  width: 100%;
+  outline: 0;
+  border: 1px solid black;
+  color: white;
+  background: transparent;
+  font-size: 15px;
+}
+
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: white;
+  cursor: text;
+  transition: 0.2s;
+}
+
+button {
+  padding: 10px 0;
+  color: white;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+  top: -30px;
+  font-size: 14px;
+}
+
+.divided-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divided-row .input-group {
+  flex-basis: 48%;
+}
+
+.footer{
+  position:absolute;
+  bottom:-2240px;
+  left:0;
+  }
+  
+/* Media Query Accessibility*/
+
+/* Small devices */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Medium devices*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices*/
+@media only screen and (min-width: 1200px) {
+
+}
